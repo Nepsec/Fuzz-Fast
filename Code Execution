@@ -1,3 +1,5 @@
+${"z".join("ab")}
+a{a*comment*}b
 ${`whoami`}
 ${(@print(system("whoami"))}
 ${(@print(system("ls%20-la"))}
